@@ -50,4 +50,8 @@ public class MobileTest {
 		System.out.println("Stock is up by :"+b+"%");
 
 	}
+	@Test
+	public void close(){
+		driver.quit();
+	}
 }

@@ -39,4 +39,8 @@ public class FatchFoodNames {
 			System.out.println("servings is :"+servigs);
 		}
 	}
+	@Test
+	public void close(){
+		driver.quit();
+	}
 }
