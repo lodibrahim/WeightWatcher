@@ -2,6 +2,7 @@ package com.sample.test;
 
 import java.io.File;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -27,5 +28,9 @@ public class DisplayItems {
 	objHomePage=new HomePage(driver);
 	System.out.println(objHomePage.getThirdItem());
 	System.out.println(objHomePage.getFifthItem());
+	}
+	@After
+	public void close(){
+		driver.close();
 	}
 }
